@@ -31,9 +31,10 @@ jobs:
     # macos-latest (macOS Catalina 10.15)
     runs-on: ubuntu-latest
 
-
-
-
+    # actions = steps
+    # Steps are tasks within a job
+    # Run as a process on the compute resource
+    steps:
 
 
 
