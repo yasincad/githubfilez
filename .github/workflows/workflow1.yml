@@ -1,0 +1,19 @@
+name: workflow1
+
+# options: push, pull, release...
+# full list: https://docs.github.com/en/free-pro-team@latest/actions/reference/events-that-trigger-workflows
+#
+# example: single
+on: push
+# example: multiple
+on: [push, pull_request]
+# example: multiple
+on:
+  - push
+  - pull_request
+
+# Jobs
+# Requirements:
+# - Workflows should have minimum 1 job
+# - Each job has a unique identifier
+# - Job identifier must start with a letter or underscore
