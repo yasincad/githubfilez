@@ -12,8 +12,29 @@ on:
   - push
   - pull_request
 
-# Jobs
-# Requirements:
-# - Workflows should have minimum 1 job
-# - Each job has a unique identifier
-# - Job identifier must start with a letter or underscore
+jobs:
+  # - Workflows should have minimum 1 job
+
+  # Keys are job identifiers
+  # - Each job has a unique identifier
+  # - Job identifier must start with a letter or underscore and can only contain alphanumeric characters, dashes and underscores
+  # - By default, they run in parallel (unless depending to each other to make it sequential)
+  job1:
+    name: Job One
+
+    # Called Runners
+    # Can be github or self hosted
+    # Options on github:
+    # - windows-latest (WinSvr19)
+    # - ubuntu-latest or ubuntu-18.04 (18.04)
+    # - ubuntu-16.04
+    # macos-latest (macOS Catalina 10.15)
+    runs-on: ubuntu-latest
+
+
+
+
+
+
+
+
